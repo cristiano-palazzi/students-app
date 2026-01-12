@@ -11,7 +11,7 @@ import { BottomSheetTextField } from '@lib/ui/components/BottomSheetTextField';
 import { Icon } from '@lib/ui/components/Icon';
 import { useStylesheet } from '@lib/ui/hooks/useStylesheet';
 import { useTheme } from '@lib/ui/hooks/useTheme';
-import * as Clarity from '@microsoft/react-native-clarity';
+//import * as Clarity from '@microsoft/react-native-clarity';
 import { PlaceOverview } from '@polito/api-client';
 
 import { Checkbox } from '../../../core/components/Checkbox';
@@ -186,7 +186,7 @@ const PlacesListHeaderComponent = ({
               <Checkbox
                 onPress={() => {
                   setAvoidStairs(!avoidStairs);
-                  Clarity.sendCustomEvent('AvoidStairsCheckbox Toggled');
+                  //Clarity.sendCustomEvent('AvoidStairsCheckbox Toggled');
                 }}
                 isChecked={avoidStairs}
               />

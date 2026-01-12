@@ -3,7 +3,8 @@ import { Platform, StyleSheet, View } from 'react-native';
 
 import { CtaButton } from '@lib/ui/components/CtaButton';
 import { useStylesheet } from '@lib/ui/hooks/useStylesheet';
-import * as Clarity from '@microsoft/react-native-clarity';
+
+//import * as Clarity from '@microsoft/react-native-clarity';
 
 interface PlacesListFooterProps {
   computeButtonState: number;
@@ -40,7 +41,7 @@ const PlacesListFooterComponent = ({
           if (computeButtonState > 0 && !isDisabled) {
             showItinerary();
           } else if (computeButtonState === 0 && !isLoading) {
-            Clarity.sendCustomEvent('ComputePathButton Clicked');
+            //Clarity.sendCustomEvent('ComputePathButton Clicked');
             handleComputeButtonState(1);
           }
         }}
