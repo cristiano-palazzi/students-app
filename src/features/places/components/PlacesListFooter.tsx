@@ -30,6 +30,7 @@ const PlacesListFooterComponent = ({
   return (
     <View style={styles.ctaButtonContainer}>
       <CtaButton
+        absolute={!isLoading}
         title={
           computeButtonState === 0
             ? t('indicationsScreen.computePath')
@@ -62,7 +63,7 @@ const createStyles = () =>
       paddingHorizontal: 18,
       flexDirection: 'column',
       justifyContent: 'center',
-      alignItems: 'center',
+      alignItems: 'stretch',
       gap: 10,
       alignSelf: 'stretch',
       marginTop: '20%',
